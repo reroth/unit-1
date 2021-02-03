@@ -59,7 +59,7 @@ function addColumns(cityPop){
     		if (cityPop[i-1].population < 100000){
     			citySize = 'Small';
     		} else if (cityPop[i-1].population < 500000){
-    			citySize = 'Medium';
+    			citySize = 'Medium'; //missing camelCase
     		} else {
     			citySize = 'Large';
     		};
@@ -85,7 +85,7 @@ function addEvents(){
 			} else {
 				color += ")";
 			};
-		}
+		}//missing closing brace
 		$(this).css('color', color);
 	});
 
